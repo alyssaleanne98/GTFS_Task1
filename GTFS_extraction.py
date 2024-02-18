@@ -5,6 +5,9 @@ from datetime import datetime # For creating archive directory names
 
 filename = 'GTFS.zip'
 url = 'https://www.capitolcorridor.org/googletransit/GTFS.zip'
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+
+
 temp = './GTFS_Temp'
 current_dir = './GTFS'
 old_dir = './GTFS-Old'
@@ -21,7 +24,8 @@ if not os.path.exists(archive):
 
 # Retrieves and extracts zip file to temp directory
 print("Downloading...")
-r = requests.get(url, stream=True)
+# r = requests.get(url, stream=True)
+r = requests.get(url, headers=headers,stream=True)
 z = zipfile.ZipFile(io.BytesIO(r.content))
 print("Extracting...")
 z.extractall(temp)
@@ -68,5 +72,5 @@ else:
     os.rename(temp, current_dir)
     GTFS_CHANGED = True
 
-print(f"Content type: {r.headers['content-type']}")
-print(f"Content: {r.content}") 
+# print(f"Content type: {r.headers['content-type']}")
+# print(f"Content: {r.content}") 
