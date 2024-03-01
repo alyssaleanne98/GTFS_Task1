@@ -1,0 +1,26 @@
+// Task 2
+    // implement logic that determines if a train is at a particular station or within a specified range based on its current latitude, longitude, and timestamp. Additionally, you need to assess whether the train is stationary or moving, and if it's moving, whether it's heading towards or away from the next expected station. 
+        // Data preparation
+            // extract info from the attached spreadsheet with the latitude, longitude pairs, and addresses of stations and depot facilities. 
+            // check if this information is already available in the gtfs formats, especially in stop.txt file. 
+            // Query Train Status:
+                //Create a function or module that takes the following inputs:
+                //trainNumber: The number of the train.
+                currentLatitude, currentLongitude, currentTime: Current location coordinates and timestamp.
+                lastLatitude, lastLongitude, lastTime: Last known location coordinates and timestamp.
+
+            Determine Stationary or moving 
+
+            Identify next expected station 
+
+            determine direction 
+
+            modular design 
+
+            testing 
+
+            dynamic inputs 
+
+            integration 
+
+            error handling 
