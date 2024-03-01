@@ -1,0 +1,27 @@
+// Download and extract GTFS data
+    // Download the GTFS data that you have been provided 
+    extract the contents of the zip fairfield
+// Explore GTFS files
+    // open the extracted folder and look for the mentioned text files (stop.txt, routes.txt, trips.txt. stop_times.txt)
+//Understand key files 
+    // Focus on understanding the structure and content of the following files:
+        // stops.txt: Information about stops, including their names and locations.
+        // routes.txt: Details about transit routes, such as route IDs and names.
+        // trips.txt: Describes individual trips on the routes.
+        // stop_times.txt: Contains the timings of stops for each trip.
+    // Explore stop_times.txt
+        // open and explore the stop_times.txt
+        // this file provides information about the timings of stops for each trip. 
+    // verify routes and directions
+        // Confirm that the relevant routes (CC,East,0 and CC,West,1) are present and have associated trips in the data.
+        // Ensure that you understand the meaning of the columns, such as trip_id, stop_id, arrival_time, and departure_time.
+    // Next steps: 
+        // once you have a good understanding of the GTFS data, you can proceed to integrate and utilize this data in your application or project. This may involve creating schedules, displauing route information, and more. 
+
+
+//Google Transit Schedule Reference 
+
+    // Ignored official specifications: These fields are part of the official GTFS. GTFS ingests this data without error but doesn't proactively use the data. 
+    // Different interpretation: These fields include the parts of the official GTFS that Google transit interprets differently than the GTFS definition of those parts. 
+    // Experimental support: these fields are experimental in google transmit's implementation. 
+    // google transit-supported extension: 
